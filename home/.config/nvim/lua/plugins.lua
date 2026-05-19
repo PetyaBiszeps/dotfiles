@@ -19,6 +19,9 @@ vim.pack.add({
     { name = "alpha-nvim",  src = "https://github.com/goolord/alpha-nvim" },
     { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" },
 
+    -- Files
+    { name = "oil.nvim", src = "https://github.com/stevearc/oil.nvim" },
+
     -- Telescope
     { name = "plenary.nvim", src = "https://github.com/nvim-lua/plenary.nvim" },
     { name = "telescope.nvim", src = "https://github.com/nvim-telescope/telescope.nvim" },
@@ -30,6 +33,7 @@ vim.pack.add({
     { name = "LuaSnip", src = "https://github.com/L3MON4D3/LuaSnip" }
 })
 
+require("config.oil").setup()
 require("config.git").setup()
 require("config.theme").setup()
 require("config.icons").setup()
