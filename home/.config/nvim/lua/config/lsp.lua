@@ -1,16 +1,16 @@
 local M = {}
 
 local servers = {
-  "html",
-  "cssls",
-  "tsgo",
-  "gopls",
-  "pyright",
   "bashls",
-  "vue_ls",
+  "cssls",
+  "gopls",
+  "html",
+  "pyright",
+  "svelte",
   "texlab",
   "tinymist",
-  "svelte"
+  "ts_ls",
+  "vue_ls",
 }
 
 function M.setup()

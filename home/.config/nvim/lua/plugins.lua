@@ -5,6 +5,11 @@ end
 
 -- Native vim.pack [Fuck Lazy]
 vim.pack.add({
+  -- Mason
+  { name = "mason.nvim", src = "https://github.com/mason-org/mason.nvim" },
+  { name = "mason-lspconfig.nvim", src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+  { name = "mason-tool-installer.nvim", src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
+
   -- Git
   { name = "vim-fugitive", src = "https://github.com/tpope/vim-fugitive" },
   { name = "gitsigns.nvim", src = "https://github.com/lewis6991/gitsigns.nvim" },
@@ -44,7 +49,10 @@ vim.pack.add({
   { name = "nvim-treesitter", src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 
   -- Keymaps
-  { name = "which-key.nvim", src = "https://github.com/folke/which-key.nvim" }
+  { name = "which-key.nvim", src = "https://github.com/folke/which-key.nvim" },
+
+  -- Formatting
+  { name = "conform.nvim", src = "https://github.com/stevearc/conform.nvim" }
 })
 
 -- Import
@@ -67,6 +75,8 @@ require("config.completion").setup()
 require("config.telescope").setup()
 require("config.oil").setup()
 
+require("config.mason").setup()
 require("config.treesitter").setup()
 require("config.lsp").setup()
 require("config.whichkey").setup()
+require("config.formatting").setup()
