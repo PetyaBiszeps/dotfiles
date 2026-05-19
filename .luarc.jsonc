@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "LuaJIT",
+  "runtime.path": [
+    "home/.config/nvim/lua/?.lua",
+    "home/.config/nvim/lua/?/init.lua",
+    "home/.config/nvim/?.lua",
+    "home/.config/nvim/?/init.lua",
+    "?.lua",
+    "?/init.lua"
+  ],
+  "diagnostics.globals": [
+    "vim"
+  ],
+  "workspace.checkThirdParty": false,
+  "telemetry.enable": false
+}
