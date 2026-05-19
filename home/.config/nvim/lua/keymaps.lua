@@ -37,3 +37,17 @@ map("v", "<leader>p", '"_dP', { desc = "Paste without replacing register" })
 -- Move selected lines
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
+
+-- Git
+map("n", "<leader>gs", "<cmd>Git<CR>", { desc = "Git status" })
+map("n", "<leader>gb", "<cmd>Git blame<CR>", { desc = "Git blame" })
+map("n", "<leader>gd", "<cmd>Gdiffsplit<CR>", { desc = "Git diff" })
+map("n", "<leader>gl", "<cmd>Git log<CR>", { desc = "Git log" })
+
+-- Telescope
+map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find files" })
+map("n", "<leader>fh", "<cmd>Telescope oldfiles<CR>", { desc = "Recently opened files" })
+map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Find word" })
+map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find buffers" })
+map("n", "<leader>fc", "<cmd>Telescope commands<CR>", { desc = "Find commands" })
+map("n", "<leader>fk", "<cmd>Telescope keymaps<CR>", { desc = "Find keymaps" })

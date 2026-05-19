@@ -6,6 +6,7 @@ end
 -- Native vim.pack [Fuck Lazy]
 vim.pack.add({
     -- Git
+    { name = "vim-fugitive", src = "https://github.com/tpope/vim-fugitive" },
     { name = "gitsigns.nvim", src = "https://github.com/lewis6991/gitsigns.nvim" },
 
     -- Theme
@@ -15,7 +16,7 @@ vim.pack.add({
     -- UI
     { name = "nui.nvim", src = "https://github.com/MunifTanjim/nui.nvim" },
     { name = "noice.nvim", src = "https://github.com/folke/noice.nvim" },
-    { name = "alpha-nvim",  src = "https://github.com/goolord/alpha-nvim" },
+    { name = "alpha-nvim", src = "https://github.com/goolord/alpha-nvim" },
     { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" },
     { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" },
 
@@ -35,24 +36,36 @@ vim.pack.add({
 
     -- Snippets
     { name = "LuaSnip", src = "https://github.com/L3MON4D3/LuaSnip" },
+    { name = "friendly-snippets", src = "https://github.com/rafamadriz/friendly-snippets" },
 
     -- Languages
     { name = "nvim-lspconfig", src = "https://github.com/neovim/nvim-lspconfig" },
-    { name = "nvim-treesitter", src = "https://github.com/nvim-treesitter/nvim-treesitter" }
+    { name = "nvim-treesitter", src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+
+    -- Keymaps
+    { name = "which-key.nvim", src = "https://github.com/folke/which-key.nvim" }
 })
 
-require("config.lsp").setup()
-require("config.oil").setup()
-require("config.git").setup()
+-- Import
+require("config.styles").setup()
+
 require("config.theme").setup()
 require("config.icons").setup()
-require("config.noice").setup()
+
 require("config.notify").setup()
+require("config.noice").setup()
+
 require("config.colors").setup()
-require("config.styles").setup()
-require("config.snippets").setup()
+require("config.git").setup()
 require("config.dashboard").setup()
-require("config.telescope").setup()
-require("config.treesitter").setup()
 require("config.statusline").setup()
+
+require("config.snippets").setup()
 require("config.completion").setup()
+
+require("config.telescope").setup()
+require("config.oil").setup()
+
+require("config.treesitter").setup()
+require("config.lsp").setup()
+require("config.whichkey").setup()
