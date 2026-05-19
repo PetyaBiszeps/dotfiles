@@ -19,6 +19,10 @@ vim.pack.add({
     { name = "alpha-nvim",  src = "https://github.com/goolord/alpha-nvim" },
     { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" },
 
+    -- Telescope
+    { name = "plenary.nvim", src = "https://github.com/nvim-lua/plenary.nvim" },
+    { name = "telescope.nvim", src = "https://github.com/nvim-telescope/telescope.nvim" },
+
     -- Statusline
     { name = "lualine.nvim", src = "https://github.com/nvim-lualine/lualine.nvim" },
 
@@ -34,4 +38,5 @@ require("config.notify").setup()
 require("config.colors").setup()
 require("config.snippets").setup()
 require("config.dashboard").setup()
+require("config.telescope").setup()
 require("config.statusline").setup()
