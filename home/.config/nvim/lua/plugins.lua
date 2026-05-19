@@ -15,8 +15,8 @@ vim.pack.add({
     -- UI
     { name = "nui.nvim", src = "https://github.com/MunifTanjim/nui.nvim" },
     { name = "noice.nvim", src = "https://github.com/folke/noice.nvim" },
-    { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" },
     { name = "alpha-nvim",  src = "https://github.com/goolord/alpha-nvim" },
+    { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" },
     { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" },
 
     -- Files
@@ -34,9 +34,14 @@ vim.pack.add({
     { name = "lualine.nvim", src = "https://github.com/nvim-lualine/lualine.nvim" },
 
     -- Snippets
-    { name = "LuaSnip", src = "https://github.com/L3MON4D3/LuaSnip" }
+    { name = "LuaSnip", src = "https://github.com/L3MON4D3/LuaSnip" },
+
+    -- Languages
+    { name = "nvim-lspconfig", src = "https://github.com/neovim/nvim-lspconfig" },
+    { name = "nvim-treesitter", src = "https://github.com/nvim-treesitter/nvim-treesitter" }
 })
 
+require("config.lsp").setup()
 require("config.oil").setup()
 require("config.git").setup()
 require("config.theme").setup()
@@ -48,5 +53,6 @@ require("config.styles").setup()
 require("config.snippets").setup()
 require("config.dashboard").setup()
 require("config.telescope").setup()
+require("config.treesitter").setup()
 require("config.statusline").setup()
 require("config.completion").setup()
