@@ -12,6 +12,7 @@ vim.pack.add({
   -- Theme
   { name = "catppuccin", src = "https://github.com/catppuccin/nvim" },
   { name = "mini.icons", src = "https://github.com/echasnovski/mini.icons" },
+  { name = "nvim-web-devicons", src = "https://github.com/nvim-tree/nvim-web-devicons" },
 
   -- UI
   { name = "nui.nvim", src = "https://github.com/MunifTanjim/nui.nvim" },

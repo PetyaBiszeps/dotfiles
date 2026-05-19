@@ -1,7 +1,6 @@
 local M = {}
 
 local servers = {
-  "nixd",
   "html",
   "cssls",
   "tsgo",
@@ -15,14 +14,6 @@ local servers = {
 }
 
 function M.setup()
-  vim.lsp.config("nixd", {
-    settings = {
-      nixd = {
-        autoArchive = true
-      }
-    }
-  })
-
   vim.lsp.enable(servers)
 end
 
