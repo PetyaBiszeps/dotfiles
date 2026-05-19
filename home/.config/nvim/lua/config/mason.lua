@@ -3,8 +3,8 @@ local M = {}
 function M.setup()
   require("mason").setup({
     ui = {
-      border = "rounded",
-    },
+      border = "rounded"
+    }
   })
 
   require("mason-lspconfig").setup({
@@ -15,9 +15,9 @@ function M.setup()
       "ts_ls",
       "vue_ls",
       "texlab",
-      "tinymist",
+      "tinymist"
     },
-    automatic_enable = false,
+    automatic_enable = true
   })
 
   require("mason-tool-installer").setup({
@@ -27,7 +27,7 @@ function M.setup()
       "prettier",
       "ruff",
       "shfmt",
-      "typstyle",
+      "typstyle"
     }
   })
 end
