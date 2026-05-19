@@ -5,6 +5,9 @@ end
 
 -- Native vim.pack [Fuck Lazy]
 vim.pack.add({
+    -- Git
+    { name = "gitsigns.nvim", src = "https://github.com/lewis6991/gitsigns.nvim" },
+
     -- Theme
     { name = "catppuccin", src = "https://github.com/catppuccin/nvim" },
     { name = "mini.icons", src = "https://github.com/echasnovski/mini.icons" },
@@ -17,6 +20,7 @@ vim.pack.add({
     { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" }
 })
 
+require("config.git").setup()
 require("config.theme").setup()
 require("config.icons").setup()
 require("config.noice").setup()
