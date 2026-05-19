@@ -17,7 +17,13 @@ vim.pack.add({
     { name = "noice.nvim", src = "https://github.com/folke/noice.nvim" },
     { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" },
     { name = "alpha-nvim",  src = "https://github.com/goolord/alpha-nvim" },
-    { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" }
+    { name = "nvim-highlight-colors", src = "https://github.com/brenoprata10/nvim-highlight-colors" },
+
+    -- Statusline
+    { name = "lualine.nvim", src = "https://github.com/nvim-lualine/lualine.nvim" },
+
+    -- Snippets
+    { name = "LuaSnip", src = "https://github.com/L3MON4D3/LuaSnip" }
 })
 
 require("config.git").setup()
@@ -26,4 +32,6 @@ require("config.icons").setup()
 require("config.noice").setup()
 require("config.notify").setup()
 require("config.colors").setup()
+require("config.snippets").setup()
 require("config.dashboard").setup()
+require("config.statusline").setup()
