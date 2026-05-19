@@ -22,6 +22,10 @@ vim.pack.add({
     -- Files
     { name = "oil.nvim", src = "https://github.com/stevearc/oil.nvim" },
 
+    -- Completion
+    { name = "blink.lib", src = "https://github.com/saghen/blink.lib" },
+    { name = "blink.cmp", src = "https://github.com/Saghen/blink.cmp" },
+
     -- Telescope
     { name = "plenary.nvim", src = "https://github.com/nvim-lua/plenary.nvim" },
     { name = "telescope.nvim", src = "https://github.com/nvim-telescope/telescope.nvim" },
@@ -44,3 +48,4 @@ require("config.snippets").setup()
 require("config.dashboard").setup()
 require("config.telescope").setup()
 require("config.statusline").setup()
+require("config.completion").setup()
