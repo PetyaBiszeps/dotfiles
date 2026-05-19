@@ -12,10 +12,12 @@ vim.pack.add({
     -- UI
     { name = "nui.nvim", src = "https://github.com/MunifTanjim/nui.nvim" },
     { name = "noice.nvim", src = "https://github.com/folke/noice.nvim" },
-    { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" }
+    { name = "nvim-notify", src = "https://github.com/rcarriga/nvim-notify" },
+    { name = "alpha-nvim", src = "https://github.com/goolord/alpha-nvim" }
 })
 
 require("config.theme").setup()
 require("config.icons").setup()
 require("config.noice").setup()
 require("config.notify").setup()
+require("config.dashboard").setup()
