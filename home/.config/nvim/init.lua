@@ -1,5 +1,5 @@
 require("options")
-require("plugins")
+require("filetypes")
 require("keymaps")
 require("autocmds")
-require("filetypes")
+require("plugins")
