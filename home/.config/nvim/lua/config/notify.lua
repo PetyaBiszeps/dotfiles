@@ -4,9 +4,10 @@ function M.setup()
   local notify = require("notify")
 
   notify.setup({
+    render = "compact",
     stages = "fade_in_slide_out",
-    timeout = 3000,
-    background_colour = "#000000"
+    timeout = 2000,
+    top_down = true
   })
 
   vim.notify = notify
