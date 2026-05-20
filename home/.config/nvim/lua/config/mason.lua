@@ -10,12 +10,15 @@ function M.setup()
   require("mason-lspconfig").setup({
     ensure_installed = {
       "bashls",
+      "cssls",
       "gopls",
+      "html",
       "pyright",
+      "svelte",
+      "texlab",
+      "tinymist",
       "ts_ls",
       "vue_ls",
-      "texlab",
-      "tinymist"
     },
     automatic_enable = true
   })
