@@ -9,7 +9,7 @@ vim.filetype.add({
   },
 
   pattern = {
-    [".*%.tsx"] = "typescript.tsx",
-    [".*%.jsx"] = "javascript.jsx"
+    [".*%.jsx"] = "javascript.jsx",
+    [".*%.tsx"] = "typescript.tsx"
   }
 })
