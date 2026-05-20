@@ -18,7 +18,8 @@ function M.setup()
       "texlab",
       "tinymist",
       "ts_ls",
-      "vue_ls",
+      "vtsls",
+      "vue_ls"
     },
     automatic_enable = true
   })
