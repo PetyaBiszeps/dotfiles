@@ -1,31 +1,11 @@
-local M = {}
+local langs = require("langs")
 
-local parsers = {
-  "bash",
-  "css",
-  "go",
-  "html",
-  "javascript",
-  "json",
-  "latex",
-  "lua",
-  "markdown",
-  "markdown_inline",
-  "nix",
-  "python",
-  "regex",
-  "scss",
-  "svelte",
-  "tsx",
-  "typescript",
-  "typst",
-  "vue"
-}
+local M = {}
 
 function M.setup()
   local treesitter = require("nvim-treesitter")
 
-  treesitter.install(parsers)
+  treesitter.install(langs.table.parsers)
 
   vim.api.nvim_create_autocmd("FileType", {
     callback = function(args)

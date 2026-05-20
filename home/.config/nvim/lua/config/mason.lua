@@ -1,3 +1,5 @@
+local langs = require("langs")
+
 local M = {}
 
 function M.setup()
@@ -8,31 +10,12 @@ function M.setup()
   })
 
   require("mason-lspconfig").setup({
-    ensure_installed = {
-      "bashls",
-      "cssls",
-      "gopls",
-      "html",
-      "pyright",
-      "svelte",
-      "texlab",
-      "tinymist",
-      "ts_ls",
-      "vtsls",
-      "vue_ls"
-    },
+    ensure_installed = langs.table.servers,
     automatic_enable = true
   })
 
   require("mason-tool-installer").setup({
-    ensure_installed = {
-      "stylua",
-      "prettierd",
-      "prettier",
-      "ruff",
-      "shfmt",
-      "typstyle"
-    }
+    ensure_installed = langs.table.tools
   })
 end
 

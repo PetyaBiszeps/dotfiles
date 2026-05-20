@@ -1,12 +1,29 @@
 local M = {}
 
+-- Table
+M.table = {
+  servers = {
+    "ts_ls"
+  },
+  parsers = {
+    "tsx",
+    "javascript",
+    "typescript"
+  },
+  tools = {
+    "prettier",
+    "prettierd"
+  }
+}
+
+-- Setup
 function M.setup()
   vim.lsp.config("ts_ls", {
     filetypes = {
       "javascript",
-      "javascriptreact",
       "typescript",
-      "typescriptreact",
+      "javascriptreact",
+      "typescriptreact"
     },
 
     root_dir = function(bufnr, on_dir)
@@ -14,15 +31,15 @@ function M.setup()
       local path = vim.fs.dirname(name)
 
       local is_vue_project = vim.fs.find({
-        "vite.config.ts",
         "vite.config.js",
-        "nuxt.config.ts",
+        "vite.config.ts",
         "nuxt.config.js",
+        "nuxt.config.ts",
         "vite.config.mjs",
-        "vite.config.mts",
+        "vite.config.mts"
       }, {
         upward = true,
-        path = path,
+        path = path
       })[1]
 
       if is_vue_project then
@@ -32,16 +49,16 @@ function M.setup()
       local root = vim.fs.find({
         "package.json",
         "tsconfig.json",
-        "jsconfig.json",
+        "jsconfig.json"
       }, {
         upward = true,
-        path = path,
+        path = path
       })[1]
 
       if root then
         on_dir(vim.fs.dirname(root))
       end
-    end,
+    end
   })
 end
 
