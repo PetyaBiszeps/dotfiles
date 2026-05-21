@@ -6,10 +6,10 @@ if package.loaded["plugins.spec"] == false then
 end
 
 -- Import
-require("config.styles.styles").setup()
-require("config.styles.theme").setup()
-require("config.styles.icons").setup()
-require("config.styles.colors").setup()
+require("config.style.styles").setup()
+require("config.style.theme").setup()
+require("config.style.icons").setup()
+require("config.style.colors").setup()
 
 require("config.ui.notifications").setup()
 require("config.ui.messages").setup()
