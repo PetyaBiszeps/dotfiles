@@ -23,5 +23,8 @@ link_path() {
   echo "Linked: $dest -> $src"
 }
 
+# Zsh
+link_path "$DOTFILES_DIR/home/.zshrc" "$HOME/.zshrc"
+
 # Neovim
 link_path "$DOTFILES_DIR/home/.config/nvim" "$HOME/.config/nvim"
