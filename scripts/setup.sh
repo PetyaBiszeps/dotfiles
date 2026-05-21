@@ -109,7 +109,20 @@ install_fedora() {
     eza \
     fzf \
     atuin \
-    zsh-autosuggestions
+    oh-my-posh \
+    zsh-autosuggestions \
+    tree-sitter-cli \
+    ripgrep \
+    fd-find \
+    unzip \
+    gcc \
+    gcc-c++ \
+    make
+
+  if ! command_exists fd && command_exists fdfind; then
+    mkdir -p "$HOME/.local/bin"
+    ln -sf "$(command -v fdfind)" "$HOME/.local/bin/fd"
+  fi
 
   echo "Fedora setup finished."
   echo "Check manually if oh-my-posh and zsh-autocomplete are available on your Fedora setup."
