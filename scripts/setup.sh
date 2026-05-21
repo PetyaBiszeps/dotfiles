@@ -87,7 +87,13 @@ install_arch() {
     atuin \
     oh-my-posh \
     zsh-autocomplete \
-    zsh-autosuggestions
+    zsh-autosuggestions \
+    tree-sitter-cli \
+    ripgrep \
+    fd \
+    unzip \
+    gcc \
+    make
 }
 
 install_fedora() {
