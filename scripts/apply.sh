@@ -41,3 +41,6 @@ link_path "$DOTFILES_DIR/home/.config/ghostty" "$HOME/.config/ghostty"
 
 # Git
 link_path "$DOTFILES_DIR/home/.config/git" "$HOME/.config/git"
+
+# Tmux
+link_path "$DOTFILES_DIR/home/.config/tmux" "$HOME/.config/tmux"

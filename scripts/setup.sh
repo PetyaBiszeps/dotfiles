@@ -34,12 +34,17 @@ install_macos() {
   fi
 
   brew install \
+    fd \
     zsh \
     git \
-    neovim \
+    bat \
     eza \
     fzf \
+    tmux \
     atuin \
+    neovim \
+    zoxide \
+    ripgrep \
     oh-my-posh \
     zsh-autocomplete \
     zsh-autosuggestions
@@ -79,21 +84,24 @@ install_arch() {
   bootstrap_yay
 
   yay -S --needed \
+    fd \
     zsh \
     git \
-    neovim \
+    bat \
     eza \
     fzf \
-    atuin \
-    oh-my-posh \
-    zsh-autocomplete \
-    zsh-autosuggestions \
-    tree-sitter-cli \
-    ripgrep \
-    fd \
-    unzip \
     gcc \
-    make
+    make \
+    tmux \
+    atuin \
+    unzip \
+    neovim \
+    zoxide \
+    ripgrep \
+    oh-my-posh \
+    tree-sitter-cli \
+    zsh-autocomplete \
+    zsh-autosuggestions
 }
 
 install_fedora() {
@@ -105,19 +113,22 @@ install_fedora() {
   sudo dnf install -y \
     zsh \
     git \
-    neovim \
+    bat \
     eza \
     fzf \
-    atuin \
-    oh-my-posh \
-    zsh-autosuggestions \
-    tree-sitter-cli \
-    ripgrep \
-    fd-find \
-    unzip \
     gcc \
+    make \
+    tmux \
+    atuin \
+    unzip \
+    neovim \
+    zoxide \
     gcc-c++ \
-    make
+    fd-find \
+    ripgrep \
+    oh-my-posh \
+    tree-sitter-cli \
+    zsh-autosuggestions
 
   if ! command_exists fd && command_exists fdfind; then
     mkdir -p "$HOME/.local/bin"
