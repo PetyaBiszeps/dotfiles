@@ -6,15 +6,14 @@ if package.loaded["plugins.spec"] == false then
 end
 
 -- Import
-require("config.styles").setup()
-
-require("config.theme").setup()
-require("config.icons").setup()
+require("config.ui.styles").setup()
+require("config.ui.theme").setup()
+require("config.ui.icons").setup()
 
 require("config.notify").setup()
 require("config.noice").setup()
 
-require("config.colors").setup()
+require("config.ui.colors").setup()
 require("config.git").setup()
 require("config.dashboard").setup()
 require("config.statusline").setup()
@@ -25,7 +24,6 @@ require("config.completion").setup()
 require("config.telescope").setup()
 require("config.oil").setup()
 
-require("config.lsp").setup()
 require("config.mason").setup()
 require("config.treesitter").setup()
 require("config.whichkey").setup()
