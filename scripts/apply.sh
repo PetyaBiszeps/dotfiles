@@ -35,3 +35,9 @@ link_path "$DOTFILES_DIR/home/.config/atuin" "$HOME/.config/atuin"
 
 # Neovim
 link_path "$DOTFILES_DIR/home/.config/nvim" "$HOME/.config/nvim"
+
+# Ghostty
+link_path "$DOTFILES_DIR/home/.config/ghostty" "$HOME/.config/ghostty"
+
+# Git
+link_path "$DOTFILES_DIR/home/.config/git" "$HOME/.config/git"
