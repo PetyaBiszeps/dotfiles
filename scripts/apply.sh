@@ -29,5 +29,8 @@ link_path "$DOTFILES_DIR/home/.zshrc" "$HOME/.zshrc"
 # Oh My Posh
 link_path "$DOTFILES_DIR/home/.config/oh-my-posh" "$HOME/.config/oh-my-posh"
 
+# Atuin
+link_path "$DOTFILES_DIR/home/.config/atuin" "$HOME/.config/atuin"
+
 # Neovim
 link_path "$DOTFILES_DIR/home/.config/nvim" "$HOME/.config/nvim"
