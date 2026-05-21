@@ -6,18 +6,17 @@ if package.loaded["plugins.spec"] == false then
 end
 
 -- Import
-require("config.ui.styles").setup()
-require("config.ui.theme").setup()
-require("config.ui.icons").setup()
+require("config.styles.styles").setup()
+require("config.styles.theme").setup()
+require("config.styles.icons").setup()
+require("config.styles.colors").setup()
 
-require("config.notify").setup()
-require("config.noice").setup()
+require("config.ui.notifications").setup()
+require("config.ui.messages").setup()
+require("config.ui.dashboard").setup()
+require("config.ui.statusline").setup()
 
-require("config.ui.colors").setup()
 require("config.git").setup()
-require("config.dashboard").setup()
-require("config.statusline").setup()
-
 require("config.snippets").setup()
 require("config.completion").setup()
 
