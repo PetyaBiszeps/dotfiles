@@ -6,6 +6,9 @@ if package.loaded["plugins.spec"] == false then
 end
 
 -- Import
+require("config.git").setup()
+require("config.mason").setup()
+
 require("config.style.styles").setup()
 require("config.style.theme").setup()
 require("config.style.icons").setup()
@@ -16,14 +19,11 @@ require("config.ui.messages").setup()
 require("config.ui.dashboard").setup()
 require("config.ui.statusline").setup()
 
-require("config.git").setup()
-require("config.snippets").setup()
-require("config.completion").setup()
+require("config.workflow.search").setup()
+require("config.workflow.explorer").setup()
+require("config.workflow.keyhints").setup()
 
-require("config.search").setup()
-require("config.explorer").setup()
-
-require("config.mason").setup()
-require("config.syntax").setup()
-require("config.keyhints").setup()
-require("config.formatting").setup()
+require("config.coding.snippets").setup()
+require("config.coding.completion").setup()
+require("config.coding.syntax").setup()
+require("config.coding.formatting").setup()
