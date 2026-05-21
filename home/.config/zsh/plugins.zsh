@@ -17,3 +17,11 @@ source_first_existing \
   "${HOMEBREW_PREFIX:-}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" \
   "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" \
   "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# -------------------------------------------------------------------
+# Plugin configurations
+# -------------------------------------------------------------------
+
+# source_if_exists "$ZDOTDIR/plugins/fzf.zsh"
+source_if_exists "$ZDOTDIR/plugins/zoxide.zsh"
+# source_if_exists "$ZDOTDIR/plugins/atuin.zsh"
