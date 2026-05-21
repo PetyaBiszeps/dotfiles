@@ -112,7 +112,13 @@ fi
 # -------------------------------------------------------------------
 
 if command_exists oh-my-posh; then
-  eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/powerlevel10k_rainbow.omp.json')"
+  OMP_THEME="$XDG_CONFIG_HOME/oh-my-posh/theme.omp.json"
+
+  if [[ -f "$OMP_THEME" && -s "$OMP_THEME" ]]; then
+    eval "$(oh-my-posh init zsh --config "$OMP_THEME")"
+  else
+    eval "$(oh-my-posh init zsh)"
+  fi
 fi
 
 # -------------------------------------------------------------------
