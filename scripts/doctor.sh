@@ -157,6 +157,7 @@ check_symlink "$DOTFILES_DIR/home/.config/zed" "$HOME/.config/zed"
 echo
 echo "==> Important files"
 check_file "$HOME/.config/atuin/config.toml"
+check_file "$HOME/.gitconfig"
 check_file "$HOME/.config/git/user"
 check_file "$HOME/.config/git/config"
 check_file "$HOME/.config/git/ignore"
@@ -189,6 +190,12 @@ fi
 echo
 echo "==> Git"
 if command_exists git; then
+  if git config --global --includes --get core.editor >/dev/null 2>&1; then
+    ok "git dotfiles config is included"
+  else
+    warn "git dotfiles config may not be included"
+  fi
+
   git_name="$(git config --global --includes user.name 2>/dev/null || true)"
   git_email="$(git config --global --includes user.email 2>/dev/null || true)"
 
