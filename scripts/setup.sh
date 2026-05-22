@@ -91,6 +91,7 @@ install_arch() {
     fd \
     zsh \
     git \
+    npm \
     bat \
     eza \
     fzf \
@@ -121,6 +122,7 @@ install_fedora() {
   sudo dnf install -y \
     zsh \
     git \
+    npm \
     bat \
     eza \
     fzf \
