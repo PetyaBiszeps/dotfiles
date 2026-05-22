@@ -41,6 +41,24 @@ check_optional_command() {
   fi
 }
 
+check_path_entry() {
+  dir="$1"
+
+  if [ ! -d "$dir" ]; then
+    warn "PATH directory does not exist yet: $dir"
+    return 0
+  fi
+
+  case ":$PATH:" in
+    *":$dir:"*)
+      ok "PATH contains: $dir"
+      ;;
+    *)
+      warn "PATH missing: $dir"
+      ;;
+  esac
+}
+
 check_symlink() {
   src="$1"
   dest="$2"
@@ -114,6 +132,14 @@ check_optional_command rg
 check_optional_command fd
 check_optional_command bat
 check_optional_command ghostty
+
+echo
+echo "==> PATH"
+check_path_entry "$HOME/.local/bin"
+check_path_entry "$HOME/bin"
+check_path_entry "$HOME/.cargo/bin"
+check_path_entry "$HOME/go/bin"
+check_path_entry "$HOME/.npm-global/bin"
 
 echo
 echo "==> Symlinks"

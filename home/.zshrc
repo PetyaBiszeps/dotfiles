@@ -60,8 +60,9 @@ export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
 
 ZSH_CONFIG_HOME="$XDG_CONFIG_HOME/zsh"
 
-source_if_exists "$ZSH_CONFIG_HOME/functions.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/exports.zsh"
+source_if_exists "$ZSH_CONFIG_HOME/path.zsh"
+source_if_exists "$ZSH_CONFIG_HOME/functions.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/aliases.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/completions.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins.zsh"
