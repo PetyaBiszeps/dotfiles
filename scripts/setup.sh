@@ -122,6 +122,7 @@ install_arch() {
     bat-extras \
     oh-my-posh \
     jdk-openjdk \
+    wl-clipboard \
     tree-sitter-cli \
     zsh-autocomplete \
     zsh-autosuggestions
@@ -161,6 +162,7 @@ install_fedora() {
     luarocks \
     oh-my-posh \
     ruby-devel \
+    wl-clipboard \
     tree-sitter-cli \
     zsh-autosuggestions \
     java-latest-openjdk-devel \
