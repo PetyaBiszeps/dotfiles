@@ -9,8 +9,18 @@
   excludesFile = ~/.config/git/ignore
   autocrlf = input
 
+[status]
+  short = true
+  branch = true
+
+[branch]
+  sort = -committerdate
+
 [pull]
   rebase = false
+
+[commit]
+  verbose = true
 
 [push]
   default = simple
@@ -20,11 +30,17 @@
   prune = true
   pruneTags = true
 
+[merge]
+  conflictStyle = zdiff3
+
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
 [rerere]
   enabled = true
-
-[branch]
-  sort = -committerdate
 
 [tag]
   sort = version:refname
@@ -35,14 +51,16 @@
 [color]
   ui = auto
 
-[diff]
-  algorithm = histogram
-  colorMoved = plain
-  mnemonicPrefix = true
-  renames = true
+[alias]
+  st = status
+  sw = switch
+  co = checkout
+  br = branch
+  ci = commit
+  lg = log --graph --oneline --decorate --all
 
-[merge]
-  conflictStyle = zdiff3
+[log]
+  date = iso
 
 [help]
   autocorrect = prompt
