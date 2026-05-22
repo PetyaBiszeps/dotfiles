@@ -33,6 +33,9 @@ link_path "$DOTFILES_DIR/home/.config/oh-my-posh" "$HOME/.config/oh-my-posh"
 # Atuin
 link_path "$DOTFILES_DIR/home/.config/atuin" "$HOME/.config/atuin"
 
+# Bat
+link_path "$DOTFILES_DIR/home/.config/bat" "$HOME/.config/bat"
+
 # Neovim
 link_path "$DOTFILES_DIR/home/.config/nvim" "$HOME/.config/nvim"
 
