@@ -223,19 +223,22 @@ fi
 echo
 echo "==> Zsh integration"
 if [ -d "$HOME/.config/zsh" ]; then
-  if grep -R "atuin init zsh" "$HOME/.config/zsh" >/dev/null 2>&1; then
+  if [ -f "$HOME/.config/zsh/plugins/atuin.zsh" ] &&
+    grep "atuin init zsh" "$HOME/.config/zsh/plugins/atuin.zsh" >/dev/null 2>&1; then
     ok "atuin zsh integration found"
   else
     warn "atuin zsh integration not found"
   fi
 
-  if grep -R "zoxide init zsh" "$HOME/.config/zsh" >/dev/null 2>&1; then
+  if [ -f "$HOME/.config/zsh/plugins/zoxide.zsh" ] &&
+    grep "zoxide init zsh" "$HOME/.config/zsh/plugins/zoxide.zsh" >/dev/null 2>&1; then
     ok "zoxide zsh integration found"
   else
     warn "zoxide zsh integration not found"
   fi
 
-  if grep -R "direnv hook zsh" "$HOME/.config/zsh" >/dev/null 2>&1; then
+  if [ -f "$HOME/.config/zsh/plugins/direnv.zsh" ] &&
+    grep "direnv hook zsh" "$HOME/.config/zsh/plugins/direnv.zsh" >/dev/null 2>&1; then
     ok "direnv zsh integration found"
   else
     warn "direnv zsh integration not found"
