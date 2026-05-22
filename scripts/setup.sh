@@ -45,12 +45,12 @@ install_macos() {
     yazi \
     tmux \
     mise \
+    rust \
     ruby \
     atuin \
     neovim \
     zoxide \
     direnv \
-    rustup \
     openjdk \
     ripgrep \
     composer \
@@ -109,13 +109,13 @@ install_arch() {
     yazi \
     tmux \
     mise \
+    rust \
     ruby \
     atuin \
     unzip \
     neovim \
     zoxide \
     direnv \
-    rustup \
     ripgrep \
     composer \
     luarocks \
@@ -147,13 +147,13 @@ install_fedora() {
     yazi \
     tmux \
     mise \
+    rust \
     ruby \
     atuin \
     unzip \
     neovim \
     zoxide \
     direnv \
-    rustup \
     gcc-c++ \
     fd-find \
     ripgrep \
