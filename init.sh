@@ -38,6 +38,11 @@ sh "$DOTFILES_DIR/scripts/setup.sh"
 echo "==> Applying dotfiles"
 sh "$DOTFILES_DIR/scripts/apply.sh"
 
+if [ ! -f "$DOTFILES_DIR/home/.config/git/user" ]; then
+  echo "==> Creating local config"
+  sh "$DOTFILES_DIR/scripts/local.sh"
+fi
+
 echo "==> Checking dotfiles"
 sh "$DOTFILES_DIR/scripts/doctor.sh"
 

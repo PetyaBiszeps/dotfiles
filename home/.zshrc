@@ -67,3 +67,9 @@ source_if_exists "$ZSH_CONFIG_HOME/aliases.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/completions.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/theme.zsh"
+
+# -------------------------------------------------------------------
+# Local overrides
+# -------------------------------------------------------------------
+
+source_if_exists "$HOME/.zshrc.local"

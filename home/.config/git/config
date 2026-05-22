@@ -48,4 +48,4 @@
   autocorrect = prompt
 
 [include]
-  path = ~/.config/git/config.local
+  path = ~/.config/git/user

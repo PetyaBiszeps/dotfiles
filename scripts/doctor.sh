@@ -157,6 +157,7 @@ check_symlink "$DOTFILES_DIR/home/.config/zed" "$HOME/.config/zed"
 echo
 echo "==> Important files"
 check_file "$HOME/.config/atuin/config.toml"
+check_file "$HOME/.config/git/user"
 check_file "$HOME/.config/git/config"
 check_file "$HOME/.config/git/ignore"
 check_file "$HOME/.config/nvim/init.lua"
@@ -183,6 +184,27 @@ if command_exists atuin; then
   fi
 else
   warn "cannot check atuin config because atuin is missing"
+fi
+
+echo
+echo "==> Git"
+if command_exists git; then
+  git_name="$(git config --global --includes user.name 2>/dev/null || true)"
+  git_email="$(git config --global --includes user.email 2>/dev/null || true)"
+
+  if [ -n "$git_name" ]; then
+    ok "git user.name configured: $git_name"
+  else
+    warn "git user.name is not configured"
+  fi
+
+  if [ -n "$git_email" ]; then
+    ok "git user.email configured: $git_email"
+  else
+    warn "git user.email is not configured"
+  fi
+else
+  warn "cannot check git config because git is missing"
 fi
 
 echo

@@ -11,6 +11,9 @@
 .env.*
 !.env.example
 
+# Local files
+home/.config/git/user
+
 # Logs
 logs/
 *.log
