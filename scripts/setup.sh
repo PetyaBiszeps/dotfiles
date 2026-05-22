@@ -48,6 +48,7 @@ install_macos() {
     rust \
     ruby \
     atuin \
+    julia \
     neovim \
     zoxide \
     direnv \
@@ -113,6 +114,7 @@ install_arch() {
     ruby \
     atuin \
     unzip \
+    julia \
     neovim \
     zoxide \
     direnv \
@@ -152,6 +154,7 @@ install_fedora() {
     ruby \
     atuin \
     unzip \
+    julia \
     neovim \
     zoxide \
     direnv \
