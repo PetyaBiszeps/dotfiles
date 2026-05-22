@@ -15,6 +15,8 @@ if [[ "$DOTFILES_OS" == "macos" ]]; then
   path_prepend "/opt/homebrew/sbin"
   path_prepend "/usr/local/bin"
   path_prepend "/usr/local/sbin"
+  path_prepend "/opt/homebrew/opt/ruby/bin"
+  path_prepend "/usr/local/opt/ruby/bin"
 fi
 
 export PATH
