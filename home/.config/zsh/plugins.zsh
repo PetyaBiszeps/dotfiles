@@ -22,6 +22,7 @@ source_first_existing \
 # Plugin configurations
 # -------------------------------------------------------------------
 
+source_if_exists "$ZSH_CONFIG_HOME/plugins/yazi.zsh"
 # source_if_exists "$ZSH_CONFIG_HOME/plugins/fzf.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins/zoxide.zsh"
 # source_if_exists "$ZSH_CONFIG_HOME/plugins/atuin.zsh"

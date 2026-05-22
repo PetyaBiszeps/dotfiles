@@ -2,5 +2,4 @@
 
 if command_exists zoxide; then
   eval "$(zoxide init zsh --cmd cd)"
-  alias e="zoxide"
 fi
