@@ -40,6 +40,7 @@ install_macos() {
     bat \
     eza \
     fzf \
+    yazi \
     tmux \
     atuin \
     neovim \
@@ -92,6 +93,7 @@ install_arch() {
     fzf \
     gcc \
     make \
+    yazi \
     tmux \
     atuin \
     unzip \
@@ -118,6 +120,7 @@ install_fedora() {
     fzf \
     gcc \
     make \
+    yazi \
     tmux \
     atuin \
     unzip \
