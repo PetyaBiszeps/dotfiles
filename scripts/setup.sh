@@ -41,6 +41,7 @@ install_macos() {
     eza \
     fzf \
     php \
+    curl \
     yazi \
     tmux \
     mise \
@@ -103,6 +104,7 @@ install_arch() {
     fzf \
     gcc \
     php \
+    curl \
     make \
     yazi \
     tmux \
@@ -140,6 +142,7 @@ install_fedora() {
     fzf \
     gcc \
     php \
+    curl \
     make \
     yazi \
     tmux \
