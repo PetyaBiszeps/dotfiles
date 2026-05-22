@@ -40,14 +40,20 @@ install_macos() {
     bat \
     eza \
     fzf \
+    php \
     yazi \
     tmux \
     mise \
+    ruby \
     atuin \
     neovim \
     zoxide \
     direnv \
+    rustup \
+    openjdk \
     ripgrep \
+    composer \
+    luarocks \
     bat-extras \
     oh-my-posh \
     zsh-autocomplete \
@@ -96,18 +102,24 @@ install_arch() {
     eza \
     fzf \
     gcc \
+    php \
     make \
     yazi \
     tmux \
     mise \
+    ruby \
     atuin \
     unzip \
     neovim \
     zoxide \
     direnv \
+    rustup \
     ripgrep \
+    composer \
+    luarocks \
     bat-extras \
     oh-my-posh \
+    jdk-openjdk \
     tree-sitter-cli \
     zsh-autocomplete \
     zsh-autosuggestions
@@ -127,21 +139,28 @@ install_fedora() {
     eza \
     fzf \
     gcc \
+    php \
     make \
     yazi \
     tmux \
     mise \
+    ruby \
     atuin \
     unzip \
     neovim \
     zoxide \
     direnv \
+    rustup \
     gcc-c++ \
     fd-find \
     ripgrep \
+    composer \
+    luarocks \
     oh-my-posh \
+    ruby-devel \
     tree-sitter-cli \
-    zsh-autosuggestions
+    zsh-autosuggestions \
+    java-latest-openjdk-devel \
 
   if ! command_exists mise; then
     curl https://mise.run | sh
