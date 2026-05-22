@@ -124,6 +124,7 @@ check_command eza
 check_command fzf
 check_command yazi
 check_command tmux
+check_command mise
 check_command atuin
 check_command zoxide
 check_command direnv
@@ -242,6 +243,13 @@ if [ -d "$HOME/.config/zsh" ]; then
     ok "direnv zsh integration found"
   else
     warn "direnv zsh integration not found"
+  fi
+
+  if [ -f "$HOME/.config/zsh/plugins/mise.zsh" ] &&
+    grep "mise activate zsh" "$HOME/.config/zsh/plugins/mise.zsh" >/dev/null 2>&1; then
+    ok "mise zsh integration found"
+  else
+    warn "mise zsh integration not found"
   fi
 else
   warn "zsh config directory missing"

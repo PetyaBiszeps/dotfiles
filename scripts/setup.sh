@@ -42,6 +42,7 @@ install_macos() {
     fzf \
     yazi \
     tmux \
+    mise \
     atuin \
     neovim \
     zoxide \
@@ -97,6 +98,7 @@ install_arch() {
     make \
     yazi \
     tmux \
+    mise \
     atuin \
     unzip \
     neovim \
@@ -126,6 +128,7 @@ install_fedora() {
     make \
     yazi \
     tmux \
+    mise \
     atuin \
     unzip \
     neovim \
@@ -137,6 +140,10 @@ install_fedora() {
     oh-my-posh \
     tree-sitter-cli \
     zsh-autosuggestions
+
+  if ! command_exists mise; then
+    curl https://mise.run | sh
+  fi
 
   if ! command_exists fd && command_exists fdfind; then
     mkdir -p "$HOME/.local/bin"
