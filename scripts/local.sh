@@ -4,6 +4,14 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 GIT_USER_FILE="$DOTFILES_DIR/home/.config/git/user"
+GIT_BRIDGE_FILE="$HOME/.gitconfig"
+
+cat > "$GIT_BRIDGE_FILE" <<EOF
+[include]
+  path = ~/.config/git/config
+EOF
+
+echo "Created: $GIT_BRIDGE_FILE"
 
 prompt_required() {
   label="$1"
