@@ -46,6 +46,7 @@ install_macos() {
     neovim \
     zoxide \
     ripgrep \
+    bat-extras \
     oh-my-posh \
     zsh-autocomplete \
     zsh-autosuggestions
@@ -100,6 +101,7 @@ install_arch() {
     neovim \
     zoxide \
     ripgrep \
+    bat-extras \
     oh-my-posh \
     tree-sitter-cli \
     zsh-autocomplete \
@@ -137,6 +139,9 @@ install_fedora() {
     mkdir -p "$HOME/.local/bin"
     ln -sf "$(command -v fdfind)" "$HOME/.local/bin/fd"
   fi
+
+  echo "WARN: bat-extras is not installed automatically on Fedora."
+  echo "WARN: Install it manually if needed, for example via a trusted COPR or upstream method."
 
   echo "Fedora setup finished."
   echo "Check manually if oh-my-posh and zsh-autocomplete are available on your Fedora setup."
