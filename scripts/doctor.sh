@@ -131,6 +131,11 @@ check_command oh-my-posh
 check_optional_command rg
 check_optional_command fd
 check_optional_command bat
+check_optional_command batman
+check_optional_command batpipe
+check_optional_command batdiff
+check_optional_command batgrep
+check_optional_command prettybat
 check_optional_command ghostty
 
 echo
