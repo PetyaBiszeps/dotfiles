@@ -44,3 +44,6 @@ link_path "$DOTFILES_DIR/home/.config/git" "$HOME/.config/git"
 
 # Tmux
 link_path "$DOTFILES_DIR/home/.config/tmux" "$HOME/.config/tmux"
+
+# Zed
+link_path "$DOTFILES_DIR/home/.config/zed" "$HOME/.config/zed"
