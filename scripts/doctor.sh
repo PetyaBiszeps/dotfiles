@@ -122,10 +122,11 @@ check_command git
 check_command nvim
 check_command eza
 check_command fzf
-check_command atuin
-check_command zoxide
 check_command yazi
 check_command tmux
+check_command atuin
+check_command zoxide
+check_command direnv
 check_command oh-my-posh
 
 check_optional_command rg
@@ -232,6 +233,12 @@ if [ -d "$HOME/.config/zsh" ]; then
     ok "zoxide zsh integration found"
   else
     warn "zoxide zsh integration not found"
+  fi
+  
+  if grep -R "direnv hook zsh" "$HOME/.config/zsh" >/dev/null 2>&1; then
+    ok "direnv zsh integration found"
+  else
+    warn "direnv zsh integration not found"
   fi
 else
   warn "zsh config directory missing"

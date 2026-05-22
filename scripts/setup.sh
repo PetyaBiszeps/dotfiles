@@ -45,6 +45,7 @@ install_macos() {
     atuin \
     neovim \
     zoxide \
+    direnv \
     ripgrep \
     bat-extras \
     oh-my-posh \
@@ -100,6 +101,7 @@ install_arch() {
     unzip \
     neovim \
     zoxide \
+    direnv \
     ripgrep \
     bat-extras \
     oh-my-posh \
@@ -128,6 +130,7 @@ install_fedora() {
     unzip \
     neovim \
     zoxide \
+    direnv \
     gcc-c++ \
     fd-find \
     ripgrep \
