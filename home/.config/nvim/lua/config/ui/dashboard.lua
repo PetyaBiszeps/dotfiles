@@ -31,14 +31,24 @@ function M.setup()
     return item
   end
 
+  local function hint_button(label, command, shortcut)
+    local item = button("x", label, command)
+
+    item.opts.shortcut = shortcut
+    item.opts.keymap = nil
+
+    return item
+  end
+
   dashboard.section.buttons.val = {
     button("e", "  New file", "<cmd>enew<CR>", "E"),
-    button("<leader>ff", "  Find file", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + F"),
-    button("<leader>fh", "  Recently opened files", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + H"),
-    button("<leader>fr", "  Frecency/MRU", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + R"),
-    button("<leader>fg", "  Find word", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + G"),
-    button("<leader>fm", "  Jump to bookmarks", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + M"),
-    button("<leader>sl", "󰁯  Open last session", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + S + L"),
+    hint_button("  Find file", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + F"),
+    hint_button("  Recently opened files", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + H"),
+    hint_button("  Frecency/MRU", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + R"),
+    hint_button("  Find word", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + G"),
+    hint_button("  Jump to bookmarks", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + F + M"),
+    hint_button("󰁯  Open last session", "<cmd>echo 'Use keybinds faggot'<CR>", "Space + S + L"),
+    button("q", "  Quit", "<cmd>qa<CR>", "Q")
   }
 
   dashboard.section.buttons.opts = {
