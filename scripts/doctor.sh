@@ -234,7 +234,7 @@ if [ -d "$HOME/.config/zsh" ]; then
   else
     warn "zoxide zsh integration not found"
   fi
-  
+
   if grep -R "direnv hook zsh" "$HOME/.config/zsh" >/dev/null 2>&1; then
     ok "direnv zsh integration found"
   else
