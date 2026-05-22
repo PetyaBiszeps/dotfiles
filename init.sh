@@ -38,6 +38,9 @@ sh "$DOTFILES_DIR/scripts/setup.sh"
 echo "==> Applying dotfiles"
 sh "$DOTFILES_DIR/scripts/apply.sh"
 
+echo "==> Checking dotfiles"
+sh "$DOTFILES_DIR/scripts/doctor.sh"
+
 echo "==> Setting default shell"
 set_default_shell
 
