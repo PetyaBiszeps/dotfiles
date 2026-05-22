@@ -1,5 +1,4 @@
-config = {
-  style = "plain"
-  pager = "less -FR"
-  theme = "Catppuccin"
-}
+# ~/.config/bat/config
+
+--style=plain
+--theme=Catppuccin
