@@ -2,8 +2,25 @@
 
 set -eu
 
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+ROOT_DIR="$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)"
+
 command_exists() {
   command -v "$1" >/dev/null 2>&1
+}
+
+read_packages() {
+  package_file="$1"
+
+  if [ ! -f "$package_file" ]; then
+    echo "Package file not found: $package_file" >&2
+    return 1
+  fi
+
+  sed \
+    -e '/^[[:space:]]*$/d' \
+    -e '/^[[:space:]]*#/d' \
+    "$package_file"
 }
 
 detect_os() {
@@ -26,6 +43,8 @@ detect_os() {
 }
 
 install_macos() {
+  package_file="$ROOT_DIR/packages/macos.txt"
+
   if ! command_exists brew; then
     echo "Homebrew is not installed."
     echo "Install Homebrew first:"
@@ -33,33 +52,17 @@ install_macos() {
     exit 1
   fi
 
-  brew install \
-    fd \
-    zsh \
-    git \
-    bat \
-    eza \
-    fzf \
-    php \
-    curl \
-    yazi \
-    tmux \
-    mise \
-    rust \
-    ruby \
-    atuin \
-    julia \
-    neovim \
-    zoxide \
-    direnv \
-    openjdk \
-    ripgrep \
-    composer \
-    luarocks \
-    bat-extras \
-    oh-my-posh \
-    zsh-autocomplete \
-    zsh-autosuggestions
+  if ! packages="$(read_packages "$package_file")"; then
+    exit 1
+  fi
+
+  if [ -z "$packages" ]; then
+    echo "No macOS packages to install."
+    return 0
+  fi
+
+  set -- $packages
+  brew install "$@"
 }
 
 bootstrap_yay() {
@@ -93,41 +96,21 @@ bootstrap_yay() {
 }
 
 install_arch() {
+  package_file="$ROOT_DIR/packages/arch.txt"
+
   bootstrap_yay
 
-  yay -S --needed \
-    fd \
-    zsh \
-    git \
-    npm \
-    bat \
-    eza \
-    fzf \
-    gcc \
-    php \
-    curl \
-    make \
-    yazi \
-    tmux \
-    mise \
-    rust \
-    ruby \
-    atuin \
-    unzip \
-    julia \
-    neovim \
-    zoxide \
-    direnv \
-    ripgrep \
-    composer \
-    luarocks \
-    bat-extras \
-    oh-my-posh \
-    jdk-openjdk \
-    wl-clipboard \
-    tree-sitter-cli \
-    zsh-autocomplete \
-    zsh-autosuggestions
+  if ! packages="$(read_packages "$package_file")"; then
+    exit 1
+  fi
+
+  if [ -z "$packages" ]; then
+    echo "No Arch packages to install."
+    return 0
+  fi
+
+  set -- $packages
+  yay -S --needed "$@"
 }
 
 OS="$(detect_os)"

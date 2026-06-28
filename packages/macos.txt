@@ -1,0 +1,37 @@
+# Core
+curl
+git
+zsh
+
+# Shell
+oh-my-posh
+zsh-autocomplete
+zsh-autosuggestions
+
+# CLI tools
+fd
+bat
+eza
+fzf
+yazi
+tmux
+atuin
+zoxide
+direnv
+ripgrep
+bat-extras
+
+# Editors
+neovim
+
+# Languages / runtimes
+php
+rust
+ruby
+julia
+openjdk
+
+# Package managers / language tooling
+mise
+composer
+luarocks
