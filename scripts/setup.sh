@@ -130,62 +130,6 @@ install_arch() {
     zsh-autosuggestions
 }
 
-install_fedora() {
-  if ! command_exists dnf; then
-    echo "dnf is required on Fedora."
-    exit 1
-  fi
-
-  sudo dnf install -y \
-    zsh \
-    git \
-    npm \
-    bat \
-    eza \
-    fzf \
-    gcc \
-    php \
-    curl \
-    make \
-    yazi \
-    tmux \
-    mise \
-    rust \
-    ruby \
-    atuin \
-    unzip \
-    julia \
-    neovim \
-    zoxide \
-    direnv \
-    gcc-c++ \
-    fd-find \
-    ripgrep \
-    composer \
-    luarocks \
-    oh-my-posh \
-    ruby-devel \
-    wl-clipboard \
-    tree-sitter-cli \
-    zsh-autosuggestions \
-    java-latest-openjdk-devel \
-
-  if ! command_exists mise; then
-    curl https://mise.run | sh
-  fi
-
-  if ! command_exists fd && command_exists fdfind; then
-    mkdir -p "$HOME/.local/bin"
-    ln -sf "$(command -v fdfind)" "$HOME/.local/bin/fd"
-  fi
-
-  echo "WARN: bat-extras is not installed automatically on Fedora."
-  echo "WARN: Install it manually if needed, for example via a trusted COPR or upstream method."
-
-  echo "Fedora setup finished."
-  echo "Check manually if oh-my-posh and zsh-autocomplete are available on your Fedora setup."
-}
-
 OS="$(detect_os)"
 
 case "$OS" in
@@ -195,11 +139,9 @@ case "$OS" in
   arch|endeavouros|manjaro)
     install_arch
     ;;
-  fedora)
-    install_fedora
-    ;;
   *)
     echo "Unsupported OS: $OS"
+    echo "Supported targets: macOS, Arch-based Linux"
     exit 1
     ;;
 esac
