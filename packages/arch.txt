@@ -41,3 +41,25 @@ npm
 mise
 composer
 luarocks
+
+# Desktop environment
+noctalia-git
+
+# Desktop apps
+zed
+lact
+steam
+kopuz
+loupe
+ghostty
+spotify
+nautilus
+obsidian
+brave-bin
+celluloid
+vesktop-bin
+qbittorrent
+mission-center
+zen-browser-bin
+telegram-desktop
+gnome-calculator
