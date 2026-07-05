@@ -23,33 +23,27 @@ link_path() {
   echo "Linked: $dest -> $src"
 }
 
-# Zsh
+link_config() {
+  name="$1"
+
+  link_path \
+    "$DOTFILES_DIR/home/.config/$name" \
+    "$HOME/.config/$name"
+}
+
+# Home
 link_path "$DOTFILES_DIR/home/.zshrc" "$HOME/.zshrc"
-link_path "$DOTFILES_DIR/home/.config/zsh" "$HOME/.config/zsh"
 
-# Oh My Posh
-link_path "$DOTFILES_DIR/home/.config/oh-my-posh" "$HOME/.config/oh-my-posh"
-
-# Atuin
-link_path "$DOTFILES_DIR/home/.config/atuin" "$HOME/.config/atuin"
-
-# Bat
-link_path "$DOTFILES_DIR/home/.config/bat" "$HOME/.config/bat"
-
-# Neovim
-link_path "$DOTFILES_DIR/home/.config/nvim" "$HOME/.config/nvim"
-
-# Ghostty
-link_path "$DOTFILES_DIR/home/.config/ghostty" "$HOME/.config/ghostty"
-
-# Git
-link_path "$DOTFILES_DIR/home/.config/git" "$HOME/.config/git"
-
-# Yazi
-link_path "$DOTFILES_DIR/home/.config/yazi" "$HOME/.config/yazi"
-
-# Tmux
-link_path "$DOTFILES_DIR/home/.config/tmux" "$HOME/.config/tmux"
-
-# Zed
-link_path "$DOTFILES_DIR/home/.config/zed" "$HOME/.config/zed"
+# Config
+link_config "niri"
+link_config "noctalia"
+link_config "zsh"
+link_config "oh-my-posh"
+link_config "atuin"
+link_config "bat"
+link_config "nvim"
+link_config "ghostty"
+link_config "git"
+link_config "yazi"
+link_config "tmux"
+link_config "zed"
