@@ -37,6 +37,10 @@ enable = true
 [wallpaper.default]
 path = '/home/yp00/Pictures/Wallpapers/FF16.jpg'
 
+[widget.launcher]
+custom_image = '/usr/share/noctalia/assets/images/distros/arch.svg'
+custom_image_colorize = true
+
 [widget.clock]
 format = '{:%A, %H:%M}'
 
