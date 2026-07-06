@@ -3,7 +3,7 @@ mode = 'dark'
 source = 'builtin'
 builtin = 'Catppuccin'
 
-[bar.main]
+[bar]
 enabled = true
 position = 'top'
 capsule = true
