@@ -113,11 +113,7 @@ binds {
   }
 
   Mod+Print hotkey-overlay-title="Screenshot Area to Clipboard" {
-    spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy"
-  }
-
-  Mod+Shift+Print hotkey-overlay-title="Screenshot Area to Swappy" {
-    spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"
+    spawn "noctalia" "msg" "screenshot-region"
   }
 }
 

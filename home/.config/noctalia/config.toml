@@ -35,6 +35,13 @@ polkit_agent = true
 [shell.panel]
 open_near_click_control_center = true
 
+[shell.screenshot]
+save_to_file = false
+copy_to_clipboard = true
+freeze_screen = true
+confirm_region = false
+pipe_to_command = false
+
 [wallpaper]
 enable = true
 
