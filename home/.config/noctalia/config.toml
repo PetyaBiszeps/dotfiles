@@ -1,0 +1,45 @@
+[theme]
+mode = 'dark'
+source = 'builtin'
+builtin = 'Catppuccin'
+
+[bar.main]
+enabled = true
+position = 'top'
+capsule = true
+start = ['launcher', 'clock', 'media']
+center = ['workspaces']
+end = ['tray', 'notifications', 'network', 'bluetooth', 'volume', 'brightness', 'clipboard', 'session']
+radius = 0
+padding = 8
+thickness = 36
+margin_edge = 0
+margin_ends = 0
+radius_bottom_left = -80
+radius_bottom_right = -80
+
+[control_center]
+sidebar = 'full'
+sidebar_section = 'full'
+
+[location]
+auto_locate = true
+
+[shell.panel]
+open_near_click_control_center = true
+
+[wallpaper]
+enable = true
+
+[wallpaper.default]
+path = '/home/yp00/Pictures/Wallpapers/FF16.jpg'
+
+[widget.clock]
+format = '{:%A, %H:%M}'
+
+[widget.tray]
+drawer = true
+drawer_columns = 4
+
+[widget.network]
+show_label = false
