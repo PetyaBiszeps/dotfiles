@@ -25,6 +25,9 @@ sidebar_section = 'full'
 [location]
 auto_locate = true
 
+[shell]
+polkit_agent = true
+
 [shell.panel]
 open_near_click_control_center = true
 
