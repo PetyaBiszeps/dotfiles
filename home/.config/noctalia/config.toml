@@ -3,6 +3,10 @@ mode = 'dark'
 source = 'builtin'
 builtin = 'Catppuccin'
 
+[audio]
+enable_sounds = true
+sound_volume = 0.75
+
 [bar.default]
 enabled = true
 position = 'top'
