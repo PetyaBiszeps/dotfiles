@@ -43,3 +43,7 @@ drawer_columns = 4
 
 [widget.network]
 show_label = false
+
+[theme.templates]
+builtin_ids = [ 'gtk3', 'gtk4', 'niri' ]
+
