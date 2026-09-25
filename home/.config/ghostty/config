@@ -1,0 +1,18 @@
+# Font settings
+font-size = 14
+font-family = Fira Code
+
+# Theme settings
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+background-opacity = 0.950000
+background-blur-radius = 60
+
+# Misc
+window-save-state = always
+gtk-single-instance = true
+confirm-close-surface = false
+mouse-hide-while-typing = true
+
+# Keybindings
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
