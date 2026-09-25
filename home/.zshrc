@@ -78,3 +78,11 @@ source_if_exists "$ZSH_CONFIG_HOME/theme.zsh"
 # -------------------------------------------------------------------
 
 source_if_exists "$HOME/.zshrc.local"
+
+# -------------------------------------------------------------------
+# Directory environment
+# -------------------------------------------------------------------
+
+if command_exists direnv; then
+  eval "$(direnv hook zsh)"
+fi

@@ -22,9 +22,8 @@ source_first_existing \
 # Plugin configurations
 # -------------------------------------------------------------------
 
+source_if_exists "$ZSH_CONFIG_HOME/plugins/mise.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins/bat.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins/fzf.zsh"
-source_if_exists "$ZSH_CONFIG_HOME/plugins/atuin.zsh"
 source_if_exists "$ZSH_CONFIG_HOME/plugins/zoxide.zsh"
-source_if_exists "$ZSH_CONFIG_HOME/plugins/direnv.zsh"
-source_if_exists "$ZSH_CONFIG_HOME/plugins/mise.zsh"
+source_if_exists "$ZSH_CONFIG_HOME/plugins/atuin.zsh"
