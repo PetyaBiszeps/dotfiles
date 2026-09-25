@@ -35,8 +35,6 @@ link_config() {
 link_path "$DOTFILES_DIR/home/.zshrc" "$HOME/.zshrc"
 
 # Config
-link_config "niri"
-link_config "noctalia"
 link_config "zsh"
 link_config "oh-my-posh"
 link_config "atuin"
@@ -46,4 +44,4 @@ link_config "ghostty"
 link_config "git"
 link_config "yazi"
 link_config "tmux"
-link_config "zed"
+link_config "mise"
