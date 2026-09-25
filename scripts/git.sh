@@ -6,7 +6,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 GIT_USER_FILE="$DOTFILES_DIR/home/.config/git/user"
 GIT_BRIDGE_FILE="$HOME/.gitconfig"
 
-cat > "$GIT_BRIDGE_FILE" <<'EOF'
+cat >"$GIT_BRIDGE_FILE" <<'EOF'
 [include]
   path = ~/.config/git/config
 EOF
@@ -38,7 +38,7 @@ git_email="$(prompt_required "Git user email")"
 
 mkdir -p "$(dirname "$GIT_USER_FILE")"
 
-cat > "$GIT_USER_FILE" <<EOF
+cat >"$GIT_USER_FILE" <<EOF
 [user]
   name = $git_name
   email = $git_email
