@@ -1,6 +1,0 @@
-# ~/.config/yazi/keymap.toml
-
-[mgr]
-prepend_keymap = [
-  { on = "r", run = "rename", desc = "Rename file" }
-]

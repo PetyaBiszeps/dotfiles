@@ -1,5 +1,0 @@
-[tools]
-node = "24"
-python = "3.14"
-go = "1.27"
-"npm:@earendil-works/pi-coding-agent" = "latest"
