@@ -3,7 +3,9 @@ return {
     "vue"
   },
 
-  servers = {},
+  servers = {
+    "vue_ls"
+  },
 
   tools = {}
 }
