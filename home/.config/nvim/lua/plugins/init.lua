@@ -22,5 +22,12 @@ vim.pack.add({
   }, {
     name = "mason-lspconfig.nvim",
     src = "https://github.com/mason-org/mason-lspconfig.nvim"
+  },
+
+  -- Completion
+  {
+    name = "blink.cmp",
+    src = "https://github.com/Saghen/blink.cmp",
+    version = vim.version.range("1.*")
   }
 })
