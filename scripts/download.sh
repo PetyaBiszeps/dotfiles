@@ -9,7 +9,7 @@ install_macos() {
     git gh pi-coding-agent \
     mise oh-my-posh tmux neovim tree-sitter-cli \
     zsh-autocomplete zsh-autosuggestions \
-    atuin bat eza fd fzf ripgrep zoxide jq direnv
+    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 }
 
 install_omarchy() {
