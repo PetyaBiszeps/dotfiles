@@ -7,3 +7,4 @@ vim.g.loaded_python3_provider = 0
 -- Imports
 require("core")
 require("plugins")
+require("config")
