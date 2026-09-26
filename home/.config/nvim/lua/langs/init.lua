@@ -2,13 +2,13 @@ local M = {
   languages = {},
   parsers = {},
   servers = {},
-  tools = {},
+  tools = {}
 }
 
 local seen = {
   parsers = {},
   servers = {},
-  tools = {},
+  tools = {}
 }
 
 local function extend_unique(kind, values)
@@ -25,7 +25,8 @@ local names = {}
 
 for name, type in vim.fs.dir(dir) do
   if type == "file" and name:match("%.lua$") and name ~= "init.lua" then
-    table.insert(names, name:gsub("%.lua$", ""))
+    local module_name = name:gsub("%.lua$", "")
+    table.insert(names, module_name)
   end
 end
 

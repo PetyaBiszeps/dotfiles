@@ -1,1 +1,2 @@
--- config/init.lua
+-- Imports
+require("config.treesitter")
