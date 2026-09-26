@@ -35,5 +35,11 @@ vim.pack.add({
   {
     name = "nvim-autopairs",
     src = "https://github.com/windwp/nvim-autopairs"
+  },
+
+  -- Theme
+  {
+    name = "jb.nvim",
+    src = "https://github.com/nickkadutskyi/jb.nvim"
   }
 })
