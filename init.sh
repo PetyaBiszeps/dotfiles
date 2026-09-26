@@ -4,6 +4,9 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+echo "==> Installing packages"
+sh "$DOTFILES_DIR/scripts/download.sh"
+
 echo "==> Applying dotfiles"
 sh "$DOTFILES_DIR/scripts/apply.sh"
 
