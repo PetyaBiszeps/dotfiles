@@ -1,6 +1,22 @@
 require("blink.cmp").setup({
   keymap = {
-    preset = "default"
+    preset = "default",
+
+    ["<Tab>"] = {
+      "select_and_accept",
+      "snippet_forward",
+      "fallback"
+    },
+
+    ["<S-Tab>"] = {
+      "snippet_backward",
+      "fallback"
+    },
+
+    ["<CR>"] = {
+      "select_and_accept",
+      "fallback"
+    }
   },
 
   completion = {
