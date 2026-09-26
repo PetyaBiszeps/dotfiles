@@ -7,7 +7,7 @@ install_macos() {
 
   brew install \
     git gh pi-coding-agent \
-    mise oh-my-posh tmux neovim \
+    mise oh-my-posh tmux neovim tree-sitter-cli \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv
 }
@@ -17,7 +17,7 @@ install_omarchy() {
 
   omarchy pkg add \
     git github-cli \
-    mise tmux neovim \
+    mise tmux neovim tree-sitter-cli \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv
 
