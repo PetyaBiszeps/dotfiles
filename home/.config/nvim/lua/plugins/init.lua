@@ -29,5 +29,11 @@ vim.pack.add({
     name = "blink.cmp",
     src = "https://github.com/Saghen/blink.cmp",
     version = vim.version.range("1.*")
+  },
+
+  -- Autopairs
+  {
+    name = "nvim-autopairs",
+    src = "https://github.com/windwp/nvim-autopairs"
   }
 })
