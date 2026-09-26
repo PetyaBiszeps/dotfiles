@@ -5,7 +5,7 @@ return {
   },
 
   servers = {
-    -- JS/TS LSP
+    "vtsls"
   },
 
   tools = {
