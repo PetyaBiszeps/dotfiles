@@ -31,10 +31,13 @@ vim.pack.add({
     version = vim.version.range("1.*")
   },
 
-  -- Autopairs
+  -- Automatization
   {
     name = "nvim-autopairs",
     src = "https://github.com/windwp/nvim-autopairs"
+  }, {
+    name = "nvim-ts-autotag",
+    src = "https://github.com/windwp/nvim-ts-autotag"
   },
 
   -- Theme
