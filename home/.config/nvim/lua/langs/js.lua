@@ -5,7 +5,8 @@ return {
   },
 
   servers = {
-    "vtsls"
+    "vtsls",
+    "eslint"
   },
 
   tools = {
