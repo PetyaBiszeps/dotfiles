@@ -53,5 +53,11 @@ vim.pack.add({
   {
     name = "lualine.nvim",
     src = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+
+  -- Git
+  {
+    name = "gitsigns.nvim",
+    src = "https://github.com/lewis6991/gitsigns.nvim"
   }
 })
