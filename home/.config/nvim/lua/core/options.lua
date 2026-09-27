@@ -8,5 +8,6 @@ vim.opt.shiftwidth = 2
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.cmdheight = 0
+vim.opt.updatetime = 500
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
