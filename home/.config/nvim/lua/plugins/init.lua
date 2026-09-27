@@ -40,7 +40,7 @@ vim.pack.add({
   -- Theme
   {
     name = "jb.nvim",
-    src = "https://github.com/nickkadutskyi/jb.nvim"
+    src = "https://github.com/PetyaBiszeps/jb.nvim"
   },
 
   -- Incline (Warnings / Errors)
