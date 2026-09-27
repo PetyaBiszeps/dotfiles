@@ -5,9 +5,17 @@
       "src": "https://github.com/Saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
+    "incline.nvim": {
+      "rev": "debd628e9395f7a9da57bdc31ce75ca6b40a880b",
+      "src": "https://github.com/b0o/incline.nvim"
+    },
     "jb.nvim": {
       "rev": "449f6e51c555b5b9517ef5d80328e48de2a0c69a",
       "src": "https://github.com/nickkadutskyi/jb.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
       "rev": "137bd0feba2c1885545b6934d36f5e5aa6adb486",

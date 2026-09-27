@@ -41,5 +41,17 @@ vim.pack.add({
   {
     name = "jb.nvim",
     src = "https://github.com/nickkadutskyi/jb.nvim"
+  },
+
+  -- Incline (Warnings / Errors)
+  {
+    name = "incline.nvim",
+    src = "https://github.com/b0o/incline.nvim"
+  },
+
+  -- Lualine
+  {
+    name = "lualine.nvim",
+    src = "https://github.com/nvim-lualine/lualine.nvim"
   }
 })
