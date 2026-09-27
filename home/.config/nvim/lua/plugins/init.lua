@@ -59,5 +59,8 @@ vim.pack.add({
   {
     name = "gitsigns.nvim",
     src = "https://github.com/lewis6991/gitsigns.nvim"
+  }, {
+    name = "diffview.nvim",
+    src = "https://github.com/sindrets/diffview.nvim"
   }
 })
