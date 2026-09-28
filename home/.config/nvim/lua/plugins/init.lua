@@ -46,6 +46,12 @@ vim.pack.add({
     src = "https://github.com/PetyaBiszeps/jb.nvim"
   },
 
+  -- Fuzzy Finder
+  {
+    name = "fzf-lua",
+    src = "https://github.com/ibhagwan/fzf-lua"
+  },
+
   -- Incline (Warnings / Errors)
   {
     name = "incline.nvim",
