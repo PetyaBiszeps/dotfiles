@@ -1,10 +1,12 @@
 return {
   parsers = {
-    "php"
+    "php",
+    "blade"
   },
 
   servers = {
-    "intelephense"
+    "intelephense",
+    "laravel_lsp"
   },
 
   tools = {}

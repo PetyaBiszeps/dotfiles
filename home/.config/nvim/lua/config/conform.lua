@@ -6,6 +6,10 @@ require("conform").setup({
 
     python = {
       "ruff_fix", "ruff_format"
+    },
+
+    php = {
+      "pint"
     }
   },
 
