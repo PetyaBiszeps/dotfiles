@@ -18,6 +18,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 -- Imports
 require("config.lsp.go")
 require("config.lsp.js")
+require("config.lsp.php")
 require("config.lsp.vue")
 require("config.lsp.eslint")
 require("config.lsp.python")
