@@ -1,12 +1,10 @@
 return {
   parsers = {
-    "javascript",
-    "typescript"
+    "go"
   },
 
   servers = {
-    "vtsls",
-    "eslint"
+    "gopls"
   },
 
   tools = {}
