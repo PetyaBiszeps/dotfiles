@@ -18,7 +18,7 @@
       "src": "https://github.com/b0o/incline.nvim"
     },
     "jb.nvim": {
-      "rev": "05808d8bd5d2055b568aba61a0ee36c593b52c3f",
+      "rev": "951c922937e9cf5d893e4747b6865ced42d4abd8",
       "src": "https://github.com/PetyaBiszeps/jb.nvim"
     },
     "lualine.nvim": {
