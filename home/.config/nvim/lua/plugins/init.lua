@@ -3,25 +3,13 @@ if not vim.pack then
 end
 
 vim.pack.add({
-  -- Syntax
+  -- Foundation
   {
+    name = "jb.nvim",
+    src = "https://github.com/PetyaBiszeps/jb.nvim"
+  }, {
     name = "nvim-treesitter",
     src = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-
-  -- LSP
-  {
-    name = "nvim-lspconfig",
-    src = "https://github.com/neovim/nvim-lspconfig"
-  },
-
-  -- Mason
-  {
-    name = "mason.nvim",
-    src = "https://github.com/mason-org/mason.nvim"
-  }, {
-    name = "mason-lspconfig.nvim",
-    src = "https://github.com/mason-org/mason-lspconfig.nvim"
   },
 
   -- Completion
@@ -31,43 +19,28 @@ vim.pack.add({
     version = vim.version.range("1.*")
   },
 
-  -- Automatization
+  -- Language Services
+  {
+    name = "nvim-lspconfig",
+    src = "https://github.com/neovim/nvim-lspconfig"
+  }, {
+    name = "mason.nvim",
+    src = "https://github.com/mason-org/mason.nvim"
+  }, {
+    name = "mason-lspconfig.nvim",
+    src = "https://github.com/mason-org/mason-lspconfig.nvim"
+  }, {
+    name = "conform.nvim",
+    src = "https://github.com/stevearc/conform.nvim"
+  },
+
+  -- Editing
   {
     name = "nvim-autopairs",
     src = "https://github.com/windwp/nvim-autopairs"
   }, {
     name = "nvim-ts-autotag",
     src = "https://github.com/windwp/nvim-ts-autotag"
-  },
-
-  -- Theme
-  {
-    name = "jb.nvim",
-    src = "https://github.com/PetyaBiszeps/jb.nvim"
-  },
-
-  -- Fuzzy Finder
-  {
-    name = "fzf-lua",
-    src = "https://github.com/ibhagwan/fzf-lua"
-  },
-
-  -- Incline (Warnings / Errors)
-  {
-    name = "incline.nvim",
-    src = "https://github.com/b0o/incline.nvim"
-  },
-
-  -- Lualine
-  {
-    name = "lualine.nvim",
-    src = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-
-  -- Formatting
-  {
-    name = "conform.nvim",
-    src = "https://github.com/stevearc/conform.nvim"
   },
 
   -- Git
@@ -77,5 +50,23 @@ vim.pack.add({
   }, {
     name = "diffview.nvim",
     src = "https://github.com/sindrets/diffview.nvim"
+  },
+
+  -- UI
+  {
+    name = "lualine.nvim",
+    src = "https://github.com/nvim-lualine/lualine.nvim"
+  }, {
+    name = "incline.nvim",
+    src = "https://github.com/b0o/incline.nvim"
+  },
+
+  -- Navigation
+  {
+    name = "fzf-lua",
+    src = "https://github.com/ibhagwan/fzf-lua"
+  }, {
+    name = "oil.nvim",
+    src = "https://github.com/stevearc/oil.nvim"
   }
 })
