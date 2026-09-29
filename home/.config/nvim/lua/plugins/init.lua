@@ -54,6 +54,9 @@ vim.pack.add({
 
   -- UI
   {
+    name = "mini.icons",
+    src = "https://github.com/nvim-mini/mini.icons"
+  }, {
     name = "lualine.nvim",
     src = "https://github.com/nvim-lualine/lualine.nvim"
   }, {

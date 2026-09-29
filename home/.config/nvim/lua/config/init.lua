@@ -20,6 +20,7 @@ require("config.gitsigns")
 require("config.diffview")
 
 -- UI
+require("config.icons")
 require("config.lualine")
 require("config.incline")
 
