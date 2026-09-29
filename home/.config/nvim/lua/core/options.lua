@@ -11,3 +11,5 @@ vim.opt.cmdheight = 0
 vim.opt.updatetime = 500
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
+
+vim.opt.mouse:append("c")
