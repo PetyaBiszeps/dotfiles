@@ -22,15 +22,20 @@ require("blink.cmp").setup({
   completion = {
     documentation = {
       auto_show = false
+    },
+
+    menu = {
+      border = "rounded",
+      winhighlight = table.concat({
+        "Normal:NormalFloat", "FloatBorder:FloatBorder", "CursorLine:PmenuSel",
+        "Search:None", "CurSearch:None"
+      }, ",")
     }
   },
 
   sources = {
     default = {
-      "lsp",
-      "path",
-      "snippets",
-      "buffer"
+      "lsp", "path", "snippets", "buffer"
     }
   }
 })
