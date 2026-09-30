@@ -6,7 +6,7 @@ install_macos() {
   echo "==> Installing packages for macOS"
 
   brew install \
-    git gh mise oh-my-posh pi-coding-agent \
+    git gh mise oh-my-posh tmux pi-coding-agent \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 }
