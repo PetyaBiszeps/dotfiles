@@ -19,4 +19,7 @@ sh "$DOTFILES_DIR/scripts/wallpapers.sh"
 echo "==> Configuring Git"
 sh "$DOTFILES_DIR/scripts/git.sh"
 
+echo "==> Initializing modules"
+sh "$DOTFILES_DIR/scripts/modules.sh"
+
 echo "==> Done"
