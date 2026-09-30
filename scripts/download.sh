@@ -6,24 +6,9 @@ install_macos() {
   echo "==> Installing packages for macOS"
 
   brew install \
-    git gh pi-coding-agent \
-    mise oh-my-posh \
+    git gh mise oh-my-posh pi-coding-agent \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
-}
-
-install_omarchy() {
-  echo "==> Installing packages for Omarchy"
-
-  omarchy pkg add \
-    git github-cli \
-    mise \
-    zsh-autocomplete zsh-autosuggestions \
-    atuin bat eza fd fzf ripgrep zoxide jq direnv
-
-  omarchy pkg aur add \
-    oh-my-posh \
-    pi-coding-agent-bin
 }
 
 case "$(uname -s)" in
@@ -32,12 +17,8 @@ case "$(uname -s)" in
     ;;
 
   Linux)
-    if command -v omarchy >/dev/null 2>&1; then
-      install_omarchy
-    else
-      echo "Unsupported Linux distribution"
-      exit 1
-    fi
+    echo "Linux is not supported yet"
+    exit 1
     ;;
 
   *)
