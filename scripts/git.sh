@@ -2,7 +2,7 @@
 
 set -eu
 
-DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 GIT_USER_FILE="$DOTFILES_DIR/home/.config/git/user"
 GIT_BRIDGE_FILE="$HOME/.gitconfig"
 

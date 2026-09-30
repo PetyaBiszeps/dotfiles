@@ -2,7 +2,7 @@
 
 set -eu
 
-DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
 link_path() {
   src="$1"
@@ -13,9 +13,7 @@ link_path() {
     return 0
   fi
 
-  if [ -L "$dest" ] || [ -e "$dest" ]; then
-    rm -rf "$dest"
-  fi
+  rm -rf "$dest"
 
   mkdir -p "$(dirname "$dest")"
   ln -s "$src" "$dest"
