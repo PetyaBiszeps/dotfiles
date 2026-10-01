@@ -67,3 +67,4 @@
 
 [include]
   path = ~/.config/git/user
+  path = ~/.config/git/delta
