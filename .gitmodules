@@ -2,3 +2,8 @@
 	path = modules/nvim
 	url = git@github.com:PetyaBiszeps/nvim.config.git
 	branch = main
+
+[submodule "modules/ai"]
+	path = modules/ai
+	url = git@github.com:PetyaBiszeps/ai.config.git
+	branch = main

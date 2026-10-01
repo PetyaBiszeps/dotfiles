@@ -7,7 +7,7 @@ install_macos() {
 
   brew install \
     git gh git-delta \
-    mise oh-my-posh tmux pi-coding-agent \
+    mise oh-my-posh tmux \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 }
