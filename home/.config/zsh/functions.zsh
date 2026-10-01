@@ -1,5 +1,15 @@
 # ~/.config/zsh/functions.zsh
 
+clear() {
+  command clear
+
+  if [[ -n "$TMUX" ]]; then
+    tmux clear-history
+  else
+    printf '\033[3J'
+  fi
+}
+
 lsjunk() {
   local target="${1:-.}"
 
