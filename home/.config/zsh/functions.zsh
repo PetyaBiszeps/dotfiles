@@ -5,6 +5,8 @@ clear() {
 
   if [[ -n "$TMUX" ]]; then
     tmux clear-history
+  elif [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then
+    printf '\033]1337;ClearScrollback\007'
   else
     printf '\033[3J'
   fi
