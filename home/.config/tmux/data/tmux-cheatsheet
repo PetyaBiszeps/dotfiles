@@ -1,6 +1,8 @@
-C-b  |                               Split pane right
-C-b  -                               Split pane down
-C-b  x                               Close pane
+PREFIX                                 Ctrl + B
 
-C-b  r                               Reload config
-C-b  ?                               Keybindings
+PREFIX  r                              Reload config
+PREFIX  ?                              Bindings table
+
+PREFIX  |                              Split pane right
+PREFIX  -                              Split pane down
+PREFIX  x                              Close pane
