@@ -2,7 +2,7 @@
 
 set -eu
 
-DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd -P)"
 
 echo "==> Installing packages"
 sh "$DOTFILES_DIR/scripts/download.sh"
