@@ -1,6 +1,6 @@
-C-b  |              Split pane right
-C-b  -              Split pane down
-C-b  x              Close pane
+C-b  |                               Split pane right
+C-b  -                               Split pane down
+C-b  x                               Close pane
 
-C-b  r              Reload config
-C-b  ?              Keybindings
+C-b  r                               Reload config
+C-b  ?                               Keybindings
