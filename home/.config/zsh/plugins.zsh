@@ -4,6 +4,8 @@
 # zsh-autocomplete
 # -------------------------------------------------------------------
 
+mkdir -p "$XDG_DATA_HOME/zsh"
+
 source_first_existing \
   "${HOMEBREW_PREFIX:-}/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh" \
   "/usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" \
