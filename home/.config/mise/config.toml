@@ -1,6 +1,8 @@
 [tools]
+pnpm = "12"
+
 go = "1.27"
 php = "8.5"
 node = "24"
-pnpm = "12"
+java = "lts"
 python = "3.14"
