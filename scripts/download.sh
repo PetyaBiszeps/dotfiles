@@ -9,7 +9,7 @@ install_macos() {
     git gh git-delta \
     mise oh-my-posh pass tmux \
     zsh-autocomplete zsh-autosuggestions \
-    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv openssl@3
+    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 }
 
 case "$(uname -s)" in
