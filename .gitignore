@@ -15,6 +15,9 @@
 home/.config/git/user
 home/.config/mise/config.local.toml
 
+# Modules
+modules/*
+
 # Logs
 logs/
 *.log
