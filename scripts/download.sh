@@ -2,19 +2,9 @@
 
 set -eu
 
-install_macos() {
-  echo "==> Installing packages for macOS"
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
-  brew install \
-    git gh git-delta \
-    mise oh-my-posh pass tmux \
-    zsh-autocomplete zsh-autosuggestions \
-    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
-
-  brew install --cask \
-    iterm2 helium-browser firefox \
-    font-jetbrains-mono-nerd-font
-}
+. "$DOTFILES_DIR/utils/install/macos.sh"
 
 case "$(uname -s)" in
   Darwin)

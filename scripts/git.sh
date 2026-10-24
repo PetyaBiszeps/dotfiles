@@ -6,6 +6,8 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 GIT_USER_FILE="$DOTFILES_DIR/home/.config/git/user"
 GIT_BRIDGE_FILE="$HOME/.gitconfig"
 
+. "$DOTFILES_DIR/utils/prompt.sh"
+
 cat >"$GIT_BRIDGE_FILE" <<'EOF'
 [include]
   path = ~/.config/git/config
@@ -17,18 +19,6 @@ if [ -f "$GIT_USER_FILE" ]; then
   echo "Git user config already exists"
   exit 0
 fi
-
-prompt_required() {
-  label="$1"
-  value=""
-
-  while [ -z "$value" ]; do
-    printf "%s\n> " "$label" >&2
-    IFS= read -r value
-  done
-
-  printf "%s" "$value"
-}
 
 echo "==> Local Git setup"
 echo
