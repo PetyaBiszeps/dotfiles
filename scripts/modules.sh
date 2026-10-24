@@ -6,7 +6,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 NVIM_DIR="$DOTFILES_DIR/modules/nvim"
 AI_DIR="$DOTFILES_DIR/modules/ai"
 
-. "$DOTFILES_DIR/utils/sync.sh"
+. "$DOTFILES_DIR/scripts/utils/sync.sh"
 
 sync_repo "git@github.com:PetyaBiszeps/nvim.config.git" "$NVIM_DIR"
 sync_repo "git@github.com:PetyaBiszeps/ai.config.git" "$AI_DIR"

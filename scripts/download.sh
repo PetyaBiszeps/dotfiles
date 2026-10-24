@@ -4,7 +4,7 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
-. "$DOTFILES_DIR/utils/install/macos.sh"
+. "$DOTFILES_DIR/scripts/utils/install/macos.sh"
 
 case "$(uname -s)" in
   Darwin)

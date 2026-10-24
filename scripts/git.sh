@@ -6,7 +6,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 GIT_USER_FILE="$DOTFILES_DIR/home/.config/git/user"
 GIT_BRIDGE_FILE="$HOME/.gitconfig"
 
-. "$DOTFILES_DIR/utils/prompt.sh"
+. "$DOTFILES_DIR/scripts/utils/prompt.sh"
 
 cat >"$GIT_BRIDGE_FILE" <<'EOF'
 [include]

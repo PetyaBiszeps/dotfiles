@@ -4,7 +4,7 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
-. "$DOTFILES_DIR/utils/link.sh"
+. "$DOTFILES_DIR/scripts/utils/link.sh"
 
 # Home
 link_path "$DOTFILES_DIR/home/.zshrc" "$HOME/.zshrc"
