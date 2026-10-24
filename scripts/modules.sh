@@ -3,8 +3,8 @@
 set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
-NVIM_DIR="$DOTFILES_DIR/modules/nvim"
-AI_DIR="$DOTFILES_DIR/modules/ai"
+NVIM_DIR="$DOTFILES_DIR/modules/nvim.config"
+AI_DIR="$DOTFILES_DIR/modules/ai.config"
 
 . "$DOTFILES_DIR/scripts/utils/sync.sh"
 
