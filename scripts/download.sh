@@ -4,6 +4,7 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
+. "$DOTFILES_DIR/scripts/utils/install/arch.sh"
 . "$DOTFILES_DIR/scripts/utils/install/macos.sh"
 
 case "$(uname -s)" in
@@ -12,8 +13,12 @@ case "$(uname -s)" in
     ;;
 
   Linux)
-    echo "Linux is not supported yet"
-    exit 1
+    if ! command -v yay >/dev/null 2>&1; then
+      echo "Error: yay is required for Arch-based systems"
+      exit 1
+    fi
+
+    install_arch
     ;;
 
   *)
