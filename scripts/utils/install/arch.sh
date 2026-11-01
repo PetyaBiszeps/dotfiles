@@ -8,4 +8,8 @@ install_arch() {
     mise oh-my-posh pass tmux \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv
+
+  yay -S --needed --noconfirm --answerclean None --answerdiff None \
+    autoconf bison re2c libxml2 oniguruma \
+    gd sqlite postgresql-libs libzip unzip
 }
