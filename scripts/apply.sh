@@ -17,3 +17,11 @@ link_config "bat"
 link_config "git"
 link_config "tmux"
 link_config "mise"
+
+# Zsh default shell
+ZSH_PATH="$(command -v zsh)"
+
+if [ "$SHELL" != "$ZSH_PATH" ]; then
+  echo "==> Setting Zsh as default shell"
+  chsh -s "$ZSH_PATH"
+fi
