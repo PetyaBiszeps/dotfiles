@@ -4,7 +4,7 @@ install_macos() {
   echo "==> Installing packages for macOS"
 
   brew install \
-    git gh git-delta \
+    git gh git-delta lazygit \
     mise oh-my-posh pass tmux \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
