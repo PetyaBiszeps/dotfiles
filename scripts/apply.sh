@@ -19,7 +19,10 @@ link_config "tmux"
 link_config "mise"
 
 # Zsh default shell
-ZSH_PATH="$(command -v zsh)"
+case "$(uname -s)" in
+  Darwin) ZSH_PATH="/bin/zsh" ;;
+  Linux)  ZSH_PATH="/usr/bin/zsh" ;;
+esac
 
 if [ "$SHELL" != "$ZSH_PATH" ]; then
   echo "==> Setting Zsh as default shell"
