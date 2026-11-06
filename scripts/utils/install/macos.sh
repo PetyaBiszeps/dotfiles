@@ -5,7 +5,7 @@ install_macos() {
 
   brew install \
     git gh git-delta lazygit \
-    mise oh-my-posh pass tmux \
+    mise oh-my-posh pass \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 

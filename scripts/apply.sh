@@ -15,7 +15,6 @@ link_config "oh-my-posh"
 link_config "atuin"
 link_config "bat"
 link_config "git"
-link_config "tmux"
 link_config "mise"
 
 # Zsh default shell

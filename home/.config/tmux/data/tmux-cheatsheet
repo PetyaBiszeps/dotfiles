@@ -1,8 +1,0 @@
-PREFIX                                 Ctrl + B
-
-PREFIX  r                              Reload config
-PREFIX  ?                              Bindings table
-
-PREFIX  |                              Split pane right
-PREFIX  -                              Split pane down
-PREFIX  x                              Close pane
