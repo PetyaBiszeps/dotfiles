@@ -5,7 +5,7 @@ install_arch() {
 
   yay -S --needed --noconfirm --answerclean None --answerdiff None \
     git github-cli git-delta lazygit \
-    mise oh-my-posh pass \
+    mise oh-my-posh pass herdr-app-desktop-bin \
     zsh-autocomplete zsh-autosuggestions \
     atuin bat eza fd fzf ripgrep zoxide jq direnv
 

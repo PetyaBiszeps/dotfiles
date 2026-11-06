@@ -10,6 +10,7 @@ install_macos() {
     atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
 
   brew install --cask \
-    iterm2 helium-browser firefox \
+    iterm2 herdr-app \
+    helium-browser firefox \
     font-jetbrains-mono-nerd-font
 }
