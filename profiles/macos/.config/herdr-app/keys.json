@@ -12,6 +12,13 @@
         "argv": ["nvim"]
       }
     },
+    "cmd-g": {
+      "command": "tab.new",
+      "args": {
+        "name": "Lazygit",
+        "argv": ["lazygit"]
+      }
+    },
     "ctrl-tab": "tab.next",
     "ctrl-shift-tab": "tab.prev",
     "cmd-shift-]": "tab.next",
