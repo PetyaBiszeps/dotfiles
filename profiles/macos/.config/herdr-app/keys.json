@@ -19,6 +19,13 @@
         "argv": ["lazygit"]
       }
     },
+    "cmd-n": {
+      "command": "tab.new",
+      "args": {
+      "name": "Obsidian",
+      "argv": ["nvim", "-c", "Obsidian quick_switch"]
+      }
+    },
     "ctrl-tab": "tab.next",
     "ctrl-shift-tab": "tab.prev",
     "cmd-shift-]": "tab.next",
@@ -28,7 +35,7 @@
     "cmd-]": "agent.next",
     "cmd-[": "agent.prev",
     "cmd-shift-l": "layout.switch",
-    "cmd-n": "space.new",
+    "cmd-shift-n": "space.new",
     "cmd-p": "mod.open:picker",
     "cmd-shift-p": "app.palette",
     "cmd-,": "app.settings",
