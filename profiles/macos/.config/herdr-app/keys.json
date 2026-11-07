@@ -14,7 +14,14 @@
     "cmd-]": "agent.next",
     "cmd-[": "agent.prev",
     "cmd-shift-l": "layout.switch",
-    "cmd-n": "space.new",
+    "cmd-n": {
+      "command": "tab.new",
+      "args": {
+        "name": "Neovim",
+        "argv": ["nvim"]
+      }
+    },
+    "cmd-shift-n": "space.new",
     "cmd-p": "mod.open:picker",
     "cmd-shift-p": "app.palette",
     "cmd-,": "app.settings",
