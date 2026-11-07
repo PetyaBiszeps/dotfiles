@@ -18,7 +18,8 @@ link_config "bat"
 link_config "git"
 link_config "mise"
 
-# Platform config
+# Herdr
+link_config "herdr-app/settings.json"
 link_profile_config "herdr-app/keys.json"
 
 # Zsh default shell
