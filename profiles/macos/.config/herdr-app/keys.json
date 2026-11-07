@@ -5,6 +5,13 @@
     "cmd-alt-h": "app.hide_others",
     "cmd-t": "tab.new",
     "cmd-w": "tab.close",
+    "cmd-e": {
+      "command": "tab.new",
+      "args": {
+        "name": "Neovim",
+        "argv": ["nvim"]
+      }
+    },
     "ctrl-tab": "tab.next",
     "ctrl-shift-tab": "tab.prev",
     "cmd-shift-]": "tab.next",
@@ -14,14 +21,7 @@
     "cmd-]": "agent.next",
     "cmd-[": "agent.prev",
     "cmd-shift-l": "layout.switch",
-    "cmd-n": {
-      "command": "tab.new",
-      "args": {
-        "name": "Neovim",
-        "argv": ["nvim"]
-      }
-    },
-    "cmd-shift-n": "space.new",
+    "cmd-n": "space.new",
     "cmd-p": "mod.open:picker",
     "cmd-shift-p": "app.palette",
     "cmd-,": "app.settings",
