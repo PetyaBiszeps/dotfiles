@@ -4,6 +4,7 @@ set -eu
 
 DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 
+. "$DOTFILES_DIR/scripts/utils/platform.sh"
 . "$DOTFILES_DIR/scripts/utils/link.sh"
 
 # Home
@@ -17,12 +18,10 @@ link_config "bat"
 link_config "git"
 link_config "mise"
 
-# Zsh default shell
-case "$(uname -s)" in
-  Darwin) ZSH_PATH="/bin/zsh" ;;
-  Linux)  ZSH_PATH="/usr/bin/zsh" ;;
-esac
+# Platform config
+link_profile_config "herdr-app/keys.json"
 
+# Zsh default shell
 if [ "$SHELL" != "$ZSH_PATH" ]; then
   echo "==> Setting Zsh as default shell"
   chsh -s "$ZSH_PATH"

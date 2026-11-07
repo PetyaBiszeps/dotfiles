@@ -24,3 +24,11 @@ link_config() {
     "$DOTFILES_DIR/home/.config/$name" \
     "$HOME/.config/$name"
 }
+
+link_profile_config() {
+  name="$1"
+
+  link_path \
+    "$DOTFILES_DIR/profiles/$PLATFORM/.config/$name" \
+    "$HOME/.config/$name"
+}
