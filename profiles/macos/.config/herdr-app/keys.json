@@ -4,7 +4,7 @@
     "cmd-h": "app.hide",
     "cmd-alt-h": "app.hide_others",
     "cmd-t": "tab.new",
-    "cmd-w": "tab.close",
+    "cmd-shift-w": "tab.close",
     "cmd-e": {
       "command": "tab.new",
       "args": {
@@ -34,7 +34,7 @@
     "cmd-,": "app.settings",
     "cmd-d": "pane.split:right",
     "cmd-shift-d": "pane.split:down",
-    "cmd-shift-w": "pane.close",
+    "cmd-w": "pane.close",
     "cmd-shift-enter": "pane.zoom",
     "cmd-alt-left": "pane.go:left",
     "cmd-alt-right": "pane.go:right",
