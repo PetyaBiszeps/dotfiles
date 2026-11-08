@@ -12,4 +12,7 @@ install_arch() {
   yay -S --needed --noconfirm --answerclean None --answerdiff None \
     autoconf bison re2c libxml2 oniguruma \
     gd sqlite postgresql-libs libzip unzip
+
+  yay -S --needed --noconfirm --answerclean None --answerdiff None \
+    docker docker-compose docker-buildx kubectl lazydocker k9s
 }

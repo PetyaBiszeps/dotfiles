@@ -7,10 +7,12 @@ install_macos() {
     git gh git-delta lazygit \
     mise oh-my-posh pass \
     zsh-autocomplete zsh-autosuggestions \
-    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv
+    atuin bat eza fd fzf ripgrep zoxide jq direnv libiconv \
+    lazydocker k9s
 
   brew install --cask \
     iterm2 herdr-app \
     helium-browser firefox \
+    docker-desktop \
     font-jetbrains-mono-nerd-font
 }

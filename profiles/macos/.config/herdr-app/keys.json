@@ -85,6 +85,20 @@
         "name": "Pi",
         "argv": ["pi"]
       }
+    },
+    "cmd-k": {
+      "command": "tab.new",
+      "args": {
+        "name": "Docker",
+        "argv": ["lazydocker"]
+      }
+    },
+    "cmd-shift-k": {
+      "command": "tab.new",
+      "args": {
+        "name": "Kubernetes",
+        "argv": ["k9s"]
+      }
     }
   },
   "terminal": {
