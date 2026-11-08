@@ -5,27 +5,6 @@
     "cmd-alt-h": "app.hide_others",
     "cmd-t": "tab.new",
     "cmd-shift-w": "tab.close",
-    "cmd-e": {
-      "command": "tab.new",
-      "args": {
-        "name": "Neovim",
-        "argv": ["nvim"]
-      }
-    },
-    "cmd-g": {
-      "command": "tab.new",
-      "args": {
-        "name": "Lazygit",
-        "argv": ["lazygit"]
-      }
-    },
-    "cmd-n": {
-      "command": "tab.new",
-      "args": {
-      "name": "Obsidian",
-      "argv": ["nvim", "-c", "Obsidian quick_switch"]
-      }
-    },
     "ctrl-tab": "tab.next",
     "ctrl-shift-tab": "tab.prev",
     "cmd-shift-]": "tab.next",
@@ -77,7 +56,36 @@
     "ctrl-6": "space.select:6",
     "ctrl-7": "space.select:7",
     "ctrl-8": "space.select:8",
-    "ctrl-9": "space.select:9"
+    "ctrl-9": "space.select:9",
+
+    "cmd-e": {
+      "command": "tab.new",
+      "args": {
+        "name": "Neovim",
+        "argv": ["nvim"]
+      }
+    },
+    "cmd-g": {
+      "command": "tab.new",
+      "args": {
+        "name": "Lazygit",
+        "argv": ["lazygit"]
+      }
+    },
+    "cmd-n": {
+      "command": "tab.new",
+      "args": {
+      "name": "Obsidian",
+      "argv": ["nvim", "-c", "Obsidian quick_switch"]
+      }
+    },
+    "cmd-i": {
+      "command": "tab.new",
+      "args": {
+        "name": "Pi",
+        "argv": ["pi"]
+      }
+    }
   },
   "terminal": {
     "cmd-f": "terminal.search",
